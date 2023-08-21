@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#08AD7F"
+    tools:context=".SecondActivity">
+
+    <EditText
+        android:id="@+id/edit_email"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:layout_marginTop="128dp"
+        android:hint="@string/e_mail"/>
+
+    <EditText
+        android:id="@+id/edit_senha"
+        android:layout_marginTop="8dp"
+        android:background="@color/white"
+        android:layout_below="@+id/edit_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:hint="@string/senha"/>
+    
+    <Button
+        android:id="@+id/button_log_in"
+        android:layout_below="@+id/edit_senha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#DADADA"
+        android:textColor="#08AD7F"
+        android:layout_marginTop="8dp"
+        android:textSize="16sp"
+        android:text="@string/login" />
+
+    <TextView
+        android:id="@+id/text_cadastre_se"
+        android:layout_below="@+id/button_log_in"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cadastre_se"
+        android:textColor="@color/white"/>
+
+    <ImageView
+        android:id="@+id/image_question"
+        android:src="@drawable/round_question_mark_24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        />
+
+    <TextView
+        android:id="@+id/text_esqueceu_senha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/image_question"
+        android:layout_alignParentBottom="true"
+        android:text="@string/esqueceu_sua_senha" />
+
+</RelativeLayout>
